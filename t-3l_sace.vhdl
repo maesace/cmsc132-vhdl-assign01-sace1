@@ -1,11 +1,11 @@
 library IEEE; use IEEE.std_logic_1164.all;
-entity t-3l_sace is
+entity buzzer6 is
 	port (in1, in2, in3, out1, out2, out3 : in std_logic; z : out std_logic);
-end t-3l_sace;
+end buzzer6;
 
-architecture t-3l_sace of t-3l_sace is
+architecture buzzer6 of buzzer6 is
 begin
 	z <= (in3 and out3) or (in3 and out2) or (in3 and out1)
 		or (in2 and out3) or (in2 and out2) or (in2 and out1)
 		or (in1 and out3) or (in1 and out2) or (in1 and out1);
-end architecture t-3l_sace;
+end architecture buzzer6;

@@ -1,14 +1,14 @@
 library IEEE; use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity t-3l_sace-tb is
+entity t_3l_sace_tb is
 	constant MAX_COMB: integer := 64;
 	constant DELAY: time := 10 ns;
 end entity;
 
-architecture tb of t-3l_sace-tb is
+architecture tb of t_3l_sace_tb is
 
-	component t-3l_sace is
+	component buzzer6 is
 		port (in1, in2, in3, out1, out2, out3 : in std_logic; z : out std_logic);
 	end component;
 	
@@ -16,7 +16,7 @@ architecture tb of t-3l_sace-tb is
 	
 begin --architecture
 
-	uut: component t-3l_sace port map(in1, in2, in3, out1, out2, out3, z);
+	uut: component buzzer6 port map(in1, in2, in3, out1, out2, out3, z);
 	main: process is
 	
 			variable temp: unsigned(5 downto 0);
