@@ -39,10 +39,22 @@ begin --architecture
 			out3 <= temp(0);
 			
 			-- compute for output
-			if((in1 = '1' or in2 = '1' or in3 = '1') and (out1 = '1' or out2 = '1' or out3 = '1')) then
-				expected_output := '1';
-			else
-				expected_output := '0';
+			if(i=0) then expected_output := '0';
+			elsif(i=1) then expected_output := '0';
+			elsif(i=2) then expected_output := '0';
+			elsif(i=3) then expected_output := '0';
+			elsif(i=4) then expected_output := '0';
+			elsif(i=5) then expected_output := '0';
+			elsif(i=6) then expected_output := '0';
+			elsif(i=7) then expected_output := '0';
+			elsif(i=8) then expected_output := '0';
+			elsif(i=16) then expected_output := '0';
+			elsif(i=24) then expected_output := '0';
+			elsif(i=32) then expected_output := '0';
+			elsif(i=40) then expected_output := '0';
+			elsif(i=48) then expected_output := '0';
+			elsif(i=56) then expected_output := '0';
+			else expected_output := '1';
 			end if;
 
 			wait for DELAY;
