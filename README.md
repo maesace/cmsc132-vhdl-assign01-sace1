@@ -4,9 +4,9 @@ CMSC 132 T Lecture Exercise
 Deadline: March 26, 2016 (12 noon)
 
 To run (with test bench):
->> ghdl -a t-3l_sace.vhdl
->> ghdl -a t-3l_sace_tb.vhdl
->> ghdl -e t-3l_sace_tb
+>> ghdl -a t3l_sace.vhdl
+>> ghdl -a t3l_sace_tb.vhdl
+>> ghdl -e t3l_sace_tb
 >> ghdl -r t_3l_sace_tb
 
 To run (with gtkwave):
